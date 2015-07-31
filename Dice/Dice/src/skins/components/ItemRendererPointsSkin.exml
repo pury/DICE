@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" 
+        width="116"
+        height="74">
+	<w:HostComponent name="egret.gui.ItemRenderer"/>
+	<e:states>
+		<e:State name="up"/>
+		<e:State name="down"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="UIA_num1" x="0" y="0" source="num0_png"/>
+	<e:UIAsset id="UIA_num2" source="num1_png" x="59" y="0"/>
+</e:Skin>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset y="159" horizontalCenter="0" source="dice_table_22_png"/>
+	<e:UIAsset source="dice_shop_11_png" y="156" horizontalCenter="0"/>
+	<e:TabBar id="TB_shop" itemRendererSkinName="skins.components.TabBarButtonShopSkin" y="301" horizontalCenter="0" name="TB_shop">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object label="数据1"/>
+				<e:Object label="数据2"/>
+			</e:Array>
+		</e:ArrayCollection>
+	</e:TabBar>
+	<e:ViewStack id="VS_shop" width="627" height="521" y="366" x="47" selectedIndex="1">
+		<e:Group width="100%" height="100%" name="视图">
+			<e:UIAsset source="dice_shop_12_png" x="22" y="21"/>
+			<e:UIAsset source="dice_table_23_png" y="99" x="-8"/>
+			<e:UIAsset source="dice_table_23_png" y="201" x="-6"/>
+			<e:UIAsset source="dice_table_23_png" y="307" x="-8"/>
+			<e:UIAsset source="dice_table_23_png" y="409" x="-8"/>
+			<e:UIAsset source="dice_shop_5_png" x="1" y="69"/>
+			<e:UIAsset source="dice_shop_6_png" x="-4" y="179"/>
+			<e:UIAsset source="dice_shop_7_png" x="9" y="291"/>
+			<e:UIAsset source="dice_shop_8_png" x="9" y="408"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" x="137" y="109" text="1元     = 1万   金币"/>
+			<e:UIAsset source="dice_shop_4_png" x="458" y="96" width="147" height="58" name="buy1"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" x="137" y="212" text="10元    = 10万  金币"/>
+			<e:UIAsset source="dice_shop_4_png" width="147" height="58" x="460" y="199" name="buy2"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" x="137" y="315" text="30元    = 30万  金币"/>
+			<e:UIAsset source="dice_shop_4_png" width="147" height="58" x="458" y="302" name="buy3"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" x="137" y="418" text="100元   = 100万 金币"/>
+			<e:UIAsset source="dice_shop_4_png" width="147" height="58" x="459" y="405" name="buy4"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" text="赠送10万" x="143" y="467"/>
+			<e:Label id="label_buy" text="10万" x="194" textColor="0x421C1C" bold="true" fontFamily="黑体" width="305" textAlign="left" size="36" y="24"/>
+		</e:Group>
+		<e:Group width="100%" height="100%" name="视图">
+			<e:UIAsset source="dice_shop_12_png" x="22" y="21"/>
+			<e:UIAsset source="dice_table_23_png" y="99" x="-8"/>
+			<e:UIAsset source="dice_table_23_png" y="201" x="-8"/>
+			<e:UIAsset source="dice_table_23_png" y="307" x="-8"/>
+			<e:UIAsset source="dice_table_23_png" y="409" x="-8"/>
+			<e:UIAsset source="dice_shop_5_png" x="1" y="69"/>
+			<e:UIAsset source="dice_shop_6_png" x="-4" y="179"/>
+			<e:UIAsset source="dice_shop_7_png" x="9" y="291"/>
+			<e:UIAsset source="dice_shop_8_png" x="9" y="408"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" x="137" y="109" width="321" text="1钻石   = 1万   金币"/>
+			<e:UIAsset x="458" y="96" width="147" height="58" source="dice_shop_3_png" name="exchange1"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" x="137" y="212" width="311" text="10钻石  = 10万  金币"/>
+			<e:UIAsset width="147" height="58" x="460" y="199" source="dice_shop_3_png" name="exchange2"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" x="137" y="315" width="321" text="30钻石  = 30万  金币"/>
+			<e:UIAsset width="147" height="58" x="458" y="302" source="dice_shop_3_png" name="exchange3"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" x="137" y="418" width="311" text="100钻石 = 100万 金币"/>
+			<e:UIAsset width="147" height="58" x="459" y="405" source="dice_shop_3_png" name="exchange4"/>
+			<e:Label textColor="0x3B2D2D" fontFamily="黑体" text="赠送10万" x="143" y="467"/>
+			<e:Label id="label_exchange" textColor="0x421C1C" text="10万" fontFamily="黑体" textAlign="left" bold="true" width="305" size="36" x="194" y="24"/>
+		</e:Group>
+	</e:ViewStack>
+	<e:UIAsset id="UIA_back" source="dice_btn_4_png" x="238" y="920" name="UIA_back"/>
+</e:Skin>

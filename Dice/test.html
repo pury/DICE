@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>大话骰子测试页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-
+
+densitydpi=device-dpi" />
+</head>
+ <style type="text/css">  
+        #table1 {  
+            width: 100%;  
+        }  
+        thead {  
+            background-color: black;  
+            color: white;  
+            text-indent: 14px;  
+            text-align: center;  
+        }  
+        tbody tr:nth-child(odd) {  
+            background-color: rgba(0, 255, 0, 0.1); text-align:center/* green, 10% alpha */  
+        }  
+        tbody tr:nth-child(even) {  
+            background-color: rgba(255, 0, 0, 0.3); text-align:center/* red, 30% alpha */  
+        }
+		.btn{
+			color: black; align:center;
+			width:100%;
+		}
+		#btnAll{
+
+		}
+		.show{
+			width:50%;
+			text-align:center;
+			background-color:yellow;
+			height:50px;
+			font-size:26px;
+		}
+		.show2{
+			width:90%;
+			text-align:center;
+			background-color:#1E90FF;
+			height:50px;
+			color:white;
+			font-size:30px;
+		}
+		.acc{
+			margin-left: auto;
+			margin-right: auto;
+			text-align:center;
+		}
+    </style> 
+<script>
+var url = "http://h5.leyan8.com/dice/";
+var requent = "?retail=yanchanghui&uid=0cfe1930-d319-49ca-a9d6-10a9fb549082&token=12"
+var retail = "yanchanghui";
+var uid = "123";
+var token = "12";
+
+
+function enter(index){
+	var show = document.getElementById("show");
+	var select = document.getElementById("btn" + index);
+	console.log("you select:  " + index +"=  " + select.value );
+	show.value = select.value;
+}
+
+function login(){
+	console.log("login: " +	document.getElementById("show").value );
+	if(show.value == "请选择"){
+		alert("请选择一个账号！");
+		return;
+	}
+	var UU = show.value.split("@");
+	uid = UU[1];
+	var target = url + "?retail=" + retail + "&uid=" + uid + "&token=" + token;
+	console.log("target: " + target);
+	window.location.href = target;
+}
+
+</script>
+<body >
+<h2 align ="center">大话骰子测试页<h2>
+<div class ="acc">
+	<input  class ="show2"id = "show" type="text" value = "请先选择测试账号" >
+</div>
+<br>
+<div class ="acc">
+	<button class ="show" onclick="login()">点击登录</button><br>
+</div>
+<br>
+<div id = "btnAll">
+<input type="button" class="btn" id = "btn0" onclick="enter(0)" value ="[name0]@0cfe1930-d319-49ca-a9d6-10a9fb549082"><br>
+<input type="button" class="btn" id = "btn1" onclick="enter(1)" value ="[name1]@0d87e74e-6628-451e-ab51-067c71f0f2c8"><br>
+<input type="button" class="btn" id = "btn2" onclick="enter(2)" value ="[name2]@0e00cf38-8802-40d8-9c2e-fee7fdf625fe"><br>
+<input type="button" class="btn" id = "btn3" onclick="enter(3)" value ="[name3]@10428311-fb89-41ef-8d31-d730422b5f5f"><br>
+<input type="button" class="btn" id = "btn4" onclick="enter(4)" value ="[name4]@11d4cd61-83d9-4d2f-8bf0-f1c99352d92f"><br>
+<input type="button" class="btn" id = "btn5" onclick="enter(5)" value ="[name5]@12f10ed7-3c5c-47dd-9afd-770039670a9a"><br>
+<input type="button" class="btn" id = "btn6" onclick="enter(6)" value ="[name6]@16c3dcc0-21f5-4d9c-b7ce-8f397d7892a3"><br>
+<input type="button" class="btn" id = "btn7" onclick="enter(7)" value ="[name7]@186ecbed-773e-4d03-aa6c-0f62b574632c"><br>
+<input type="button" class="btn" id = "btn8" onclick="enter(8)" value ="[name8]@18903190-c073-492a-b46f-d042314cf51c"><br>
+<input type="button" class="btn" id = "btn9" onclick="enter(9)" value ="[name9]@18b5cfde-1b14-4d74-83e6-a629a0c426f2"><br>
+<input type="button" class="btn" id = "btn10" onclick="enter(10)" value ="[name10]@192f778c-095e-4277-a659-b8e254f82ef4"><br>
+<input type="button" class="btn" id = "btn11" onclick="enter(11)" value ="[name11]@1a1a2d33-56ab-4f3c-92e5-19ccbe7c6fc1"><br>
+<input type="button" class="btn" id = "btn12" onclick="enter(12)" value ="[name12]@1bb23523-2eda-4f90-947e-f3b6535ebdea"><br>
+<input type="button" class="btn" id = "btn13" onclick="enter(13)" value ="[name13]@1d93419f-19cb-4468-ae50-39ec3303c4f1"><br>
+<input type="button" class="btn" id = "btn14" onclick="enter(14)" value ="[name14]@1e1a0cd6-baed-4730-a271-40c94a203092"><br>
+<input type="button" class="btn" id = "btn15" onclick="enter(15)" value ="[name15]@1f851882-b099-40da-867f-441692b18b83"><br>
+<input type="button" class="btn" id = "btn16" onclick="enter(16)" value ="[name16]@1f8fd7fd-61c8-43da-b00f-7b54d5d6d05f"><br>
+<input type="button" class="btn" id = "btn17" onclick="enter(17)" value ="[name17]@22a8b411-037d-443d-bbd9-52da22a05a5d"><br>
+<input type="button" class="btn" id = "btn18" onclick="enter(18)" value ="[name18]@22ac1e79-ae0e-494b-9c9a-2cc5e6f9fb54"><br>
+<input type="button" class="btn" id = "btn19" onclick="enter(19)" value ="[name19]@23608c90-302f-43fc-938c-2f901d77f03b"><br>
+</div>
+</body>
+</html>

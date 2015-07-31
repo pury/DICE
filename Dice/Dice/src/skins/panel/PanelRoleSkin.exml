@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset source="bg_png" id="UIA_bg" x="0" y="0"/>
+	<e:UIAsset source="dice_mu5_png" horizontalCenter="0.5" y="175"/>
+	<e:UIAsset source="extra_info_png" y="147" horizontalCenter="0"/>
+	<e:UIAsset source="extra_bg_avatar_png" y="272" horizontalCenter="0"/>
+	<e:Label id="label_role_gold" text="加载中" textColor="0xD3D626" width="170" x="342" bold="true" y="710"/>
+	<e:Label id="label_role_gift" text="加载中" textColor="0xD3D626" width="170" x="342" bold="true" y="815"/>
+	<e:TextInput id="ti_role_name" skinName="skins.components.TextInputRoleSkin" text="最多五个字" touchEnabled="false" touchChildren="false" x="402" y="345" visible="false"/>
+	<e:Group height="40" width="220" x="311" y="547" visible="false">
+		<e:RadioButton id="rb_man" skinName="skins.components.RadioButtonGenderSkin" label="男" selected="true" name="rb_man" y="-16" x="0" bold="true" touchEnabled="false"/>
+		<e:RadioButton id="rb_woman" skinName="skins.components.RadioButtonGenderSkin" label="女" x="85" name="rb_woman" y="-16" bold="true" touchEnabled="false"/>
+		<e:layout>
+			<e:HorizontalLayout gap="55"/>
+		</e:layout>
+	</e:Group>
+	<e:UIAsset id="UIA_avatar" width="167" height="167" source="role_boy_png" y="279" horizontalCenter="0"/>
+	<e:UIAsset source="dice_btn_4_png" name="btn_close" horizontalCenter="0" y="927"/>
+	<e:Group height="270" width="108" x="170" y="490">
+		<e:UIAsset source="dice_role_4_png" x="0" y="0"/>
+		<e:UIAsset source="dice_role_3_png" x="10" y="75"/>
+		<e:UIAsset source="dice_role_2_png" x="14" y="110"/>
+		<e:UIAsset source="dice_role_1_png" x="22" y="164"/>
+		<e:layout>
+			<e:VerticalLayout gap="60"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="label_gender" x="345" y="604" text="男"/>
+	<e:Label id="label_name" width="268" x="332" textAlign="left" y="500" text="最多无盒子" maxDisplayedLines="1"/>
+</e:Skin>

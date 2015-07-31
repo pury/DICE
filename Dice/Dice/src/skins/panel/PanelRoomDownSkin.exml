@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" width="720" height.disabled="295" height="1280">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="UIA_bg_table" source="dice_table_17_png"  name="UIA_bg_table" y="1039" x="1"/>
+	<e:UIAsset id="UIA_charge" source="dice_table_3_png" width="137" visible="true" name="UIA_charge" y="1007" left="-2"/>
+	<e:UIAsset id="UIA_shop" source="dice_room_4_png" name="UIA_shop" y="996" right="-5"/>
+	<e:UIAsset id="UIA_help" source="dice_room_3_png" name="UIA_help" horizontalCenter="-2" y="1039"/>
+	<e:UIAsset id="UIA_bg" source="black_bg_png" height="56" source.disabled="black_bg_png" name="UIA_bg" y="1224" x="0"/>
+	<e:UIAsset source="dice_table_5_png" x="443" y="1225"/>
+	<e:Label id="label_coin" text="6666666" width="168" bold="true" height="42" verticalAlign="middle" size="26" y="1232" x="258" textAlign="left"/>
+	<e:Label id="label_gift" text="888888888" width="163" bold="true" height="42" verticalAlign="middle" size="26" y="1232" x="552" textAlign="left"/>
+	<e:Label id="label_id" textAlign="center" fontFamily="黑体" width="167" textColor="0xFFFFFF" size="24" height="43" bold="true" x="7" y="1230" name="label_id" maxDisplayedLines="1" verticalAlign="middle" maxHeight="43" text="最多五个字"/>
+	<e:UIAsset source="dice_table_7_png" y="1227" x="185"/>
+	<e:Label id="label_rate" x="109" size="26" y="1056" name="label_rate" text="当前倍率：10"/>
+	<e:UIAsset id="UIA_bg_black" source="black_bg_png" height="1280" name="UIA_bg_black" touchChildren="false" touchEnabled="false" visible="false" x="0" y="0"/>
+	<e:List itemRendererSkinName="skins.components.ItemRendererDiceSkin" id="list_dice" visible.normal="false" name.normal="list_dice" visible="true" y="1096" left="147" right="14">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object label=""/>
+				<e:Object label=""/>
+				<e:Object label=""/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:HorizontalLayout gap="-4"/>
+		</e:layout>
+	</e:List>
+	<e:Group height="144" width="138" y="1078" x="18">
+		<e:UIAsset id="UIA_icon_bg" source="dice_table_15_png" x="14" y="26"/>
+		<e:UIAsset id="UIA_icon" source="role_girl_png" width="96" height="96" name="UIA_icon" x="21" y="38"/>
+		<e:UIAsset id="UIA_master" source="bg_master_png" x="66" y="8"/>
+	</e:Group>
+</e:Skin>

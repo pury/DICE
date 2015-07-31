@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" xmlns:game="game.*" height="1280">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:List id="list_real_players" itemRendererSkinName="skins.components.ItemRendererRoomPlayersSkin" y="194"  visible="false">
+		<e:dataProvider>
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object label="数据1"/>
+					<e:Object label="数据2"/>
+					<e:Object label="数据3"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+				</e:Array>
+			</e:ArrayCollection>
+		</e:dataProvider>
+		<e:layout>
+			<e:TileLayout requestedRowCount="3" requestedColumnCount="3" horizontalGap="164" verticalGap="80"/>
+		</e:layout>
+	</e:List>
+	<e:Button id="btn_return" label="按钮" name="btn_return" left="24" top="29" width="64" skinName="skins.components.ButtonMeauSkin"/>
+	
+	
+	<e:Group id="group_dialog" width="319" height="158" visible="false"  x="245" y="618">
+		<e:UIAsset id="UIA_dialogbg" source="dice_table_18_png" y="-2" x="1" width="313" height="161"/>
+		<e:Group id="Group_mini" height="95" width="268" x="44" y="33">
+			<e:UIAsset id="UIA_dialogdice" source="room_dice1_png" width="97" height="102" x="172" y="-1"/>
+			<e:UIAsset source="num3_png" id="UIA_number_right" x="62" y="10"/>
+			<e:UIAsset source="num3_png" id="UIA_number_left" x="7" y="10"/>
+			<e:UIAsset source="mutiple_sign_png" x="122" y="20"/>
+		</e:Group>
+		
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="group_alarm" height="84" width="84" visible="true" x="550" y="705">
+		<e:UIAsset id="UIA_alarm" source="bg_timer_png" width="84" height="84" x="0" y="0"/>
+		<e:Label id="label_alarm" text="9" textColor="0x000000" textAlign="center" width="84" height="84" verticalAlign="middle" y="3" x="1"/>
+	</e:Group>
+	<e:UIAsset id="UIA_sound" source="dice_set_2_png" name="UIA_sound" width="64" x="632" y="31"/>
+	<e:Button id="UIA_game_start" label="按钮" name="UIA_game_start" skinName="skins.components.ButtonStartGameSkin" horizontalCenter="0" y="766"/>
+	<e:List id="list_avatar" itemRendererSkinName="skins.components.ItemRendererRoomPlayersSkin" horizontalCenter="0" y="216">
+		<e:dataProvider>
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object label="数据1"/>
+					<e:Object label="数据2"/>
+					<e:Object label="数据3"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+					<e:Object label="null"/>
+				</e:Array>
+			</e:ArrayCollection>
+		</e:dataProvider>
+		<e:layout>
+			<e:TileLayout  requestedColumnCount="4" requestedRowCount="2"/>
+		</e:layout>
+	</e:List>
+	<e:UIAsset id="UIA_master" source="bg_master_png" x="84" y="805"/>
+	<game:PanelRoomDownUI id="PanelRoomDownUI" skinName="skins.panel.PanelRoomDownSkin" x="0" y="0">
+	</game:PanelRoomDownUI>
+	<game:PanelCallUI id="PanelCallUI" height="1280" width="720"  skinName="skins.panel.PanelCallSkin" visible="false" y="0" right="0"/>
+	<game:PanelRoomRollUI id="PanelRoomRollUI" height="385" width="720"  y="222" horizontalCenter="0" skinName="skins.panel.PanelRoomRollSkin" visible="false"/>
+	<game:PanelRoomReminderUI id="PanelRoomReminderUI" height="250" width="720"  y="222" skinName="skins.panel.PanelRoomReminderSkin" x="0" visible="false"/>
+	<e:UIAsset id="UIA_up" y="0" source="dice_table_6_png" horizontalCenter="0"/>
+	<e:Scroller id="scro_info" width="262" height="102" textAlign="center" horizontalCenter="3" y="55">
+		<e:Group height="108" width="262">
+			<e:List id="list_information" itemRendererSkinName="skins.components.ItemRendererTransparentSkin" x="0" y="3" height="102">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object label="数据1"/>
+						<e:Object label="数据2"/>
+						<e:Object label="数据3"/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:VerticalLayout gap="2" paddingTop="5"/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+	<e:UIAsset id="UIA_hint" y="831" name="UIA_hint" horizontalCenter="0" source="dice_table_12_png"/>
+</e:Skin>

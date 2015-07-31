@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" width="131" height="190">
+	<w:HostComponent name="egret.gui.ItemRenderer"/>
+	<e:states>
+		<e:State name="up"/>
+		<e:State name="down"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="UIA_bgbg" x="0" y="0" source="avatar_shelter_png"/>
+	<e:Label id="label_ghostname" text="酷炫小钻风" size="22" x="0" y="133" width="131" textAlign="center" textColor="0xE3E3E3" maxDisplayedLines="1"/>
+	<e:Label id="label_ghostcoin" text="12123123" size="22" width="131" x="0" y="161" textAlign="center" textColor="0xDCDCDC"/>
+	<e:UIAsset id="UIA_ghosticon" width="116" height="116" textAlign="center" source="role_boy_png" x="8" y="8"/>
+	<e:UIAsset id="UIA_master" source="bg_master_png" x="86" y="-3" width="46" height="46"/>
+	<e:UIAsset id="UIA_high" source="dice_table_1_png" y="1" width="129" height="187" x="1"/>
+</e:Skin>

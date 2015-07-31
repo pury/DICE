@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="UIA_bg" x="0" y="0" source="bg_png"/>
+	<e:UIAsset source="dice_table_22_png" horizontalCenter="0.5" y="122"/>
+	<e:UIAsset id="UIA_result" source="win_png" horizontalCenter="16.5" y="1"/>
+	<e:Group id="group_dice" height="360" width="200" x="52" y="205">
+		<e:UIAsset x="0" y="0" source="dice1_png"/>
+		<e:UIAsset source="dice2_png" x="0" y="119"/>
+		<e:UIAsset source="dice3_png" x="0" y="238"/>
+		<e:UIAsset source="mutiple_sign_png" y="29" x="119"/>
+		<e:UIAsset source="mutiple_sign_png" y="152" x="121"/>
+		<e:UIAsset source="mutiple_sign_png" y="273" x="119"/>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="btn_back" label="按钮" name="btn_back" skinName="skins.components.ButtonNoSkin" horizontalCenter="0" y="938"/>
+	<e:List id="list_result" itemRendererSkinName="skins.components.ItemRendererPointsSkin" x="234" y="226">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object label="数据1"/>
+				<e:Object label="数据2"/>
+				<e:Object label="数据3"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:VerticalLayout gap="48"/>
+		</e:layout>
+	</e:List>
+	<e:List itemRendererSkinName="skins.components.ItemRendererPointsSkin" id="list_result0" x="544" y="226">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object label="数据1"/>
+				<e:Object label="数据2"/>
+				<e:Object label="数据3"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:VerticalLayout gap="48"/>
+		</e:layout>
+	</e:List>
+	<e:Group id="group_dice0" height="360" width="198" x="359" y="205">
+		<e:UIAsset source="dice4_png" x="0" y="0"/>
+		<e:UIAsset source="dice5_png" x="0" y="119"/>
+		<e:UIAsset source="dice6_png" y="238" x="0"/>
+		<e:UIAsset source="mutiple_sign_png" y="29" x="119"/>
+		<e:UIAsset source="mutiple_sign_png" y="152" x="119"/>
+		<e:UIAsset source="mutiple_sign_png" y="273" x="119"/>
+	</e:Group>
+	<e:UIAsset source="dice_table_23_png" horizontalCenter="0.5" y="567"/>
+	<e:UIAsset source="dice_table_23_png" x="41" y="671"/>
+	<e:Label text="用户名" textColor="0x2A2424" bold="true" fontFamily="黑体" x="129" y="577"/>
+	<e:Label id="label_win" textColor="0x2A2424" fontFamily="黑体" text="最多大个子" x="102" textAlign="center" y="628" width="156" maxDisplayedLines="1"/>
+	<e:Label textColor="0x2A2424" fontFamily="黑体" x="549" text="胜" textAlign="center" y="628"/>
+	<e:Label id="label_win_gold" textColor="0x2A2424" fontFamily="黑体" text="+1000" x="354" textAlign="center" y="628"/>
+	<e:Label id="label_lose" textColor="0x2A2424" text="最多大个子" fontFamily="黑体" textAlign="center" x="102" y="682" width="156" maxDisplayedLines="1"/>
+	<e:Label textColor="0x2A2424" fontFamily="黑体" textAlign="center" x="549" text="负" y="682"/>
+	<e:Label id="label_lose_gold" textColor="0x2A2424" fontFamily="黑体" textAlign="center" x="354" text="-1000" y="682"/>
+	<e:Label id="label_tai" textColor="0x2A2424" fontFamily="黑体" bold="true" text="-200台费" horizontalCenter="0" y="747"/>
+	<e:Label textColor="0x2A2424" fontFamily="黑体" bold="true" x="361" text="结算" y="577"/>
+	<e:Label textColor="0x2A2424" fontFamily="黑体" bold="true" x="529" text="胜负" y="577"/>
+	<e:Group id="group_gift" height="140" width="639" horizontalCenter="0.5" y="784">
+		<e:UIAsset width="639" x="0" y="38" source="dice_table_24_png"/>
+		<e:UIAsset source="dice_result_3_png" x="8" y="-14"/>
+		<e:UIAsset source="dice_result_6_png" horizontalCenter="1" y="52"/>
+		<e:Label id="label_num" text="99" x="160" y="57" textColor="0xC70A0A" bold="true" fontFamily="幼圆" width="46" height="46" textAlign="center" size="34" verticalAlign="middle"/>
+	</e:Group>
+	<e:UIAsset x="51" y="620" source="dice_result_5_png"/>
+</e:Skin>

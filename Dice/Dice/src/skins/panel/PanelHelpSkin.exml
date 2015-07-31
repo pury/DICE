@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset horizontalCenter="0.5" y="159" source="dice_table_22_png"/>
+	<e:UIAsset y="231" horizontalCenter="0" source="extra_win_bg_white_png"/>
+	<e:UIAsset y="173" horizontalCenter="0" source="extra_help_png"/>
+	<e:Label textColor="0x000000" width="506" fontFamily="黑体" lineSpacing="10" text="    游戏流程：1. 首位进入房间的玩家成为庄家，人数达到2-8人后，庄家可以开始游戏。2. 游戏开始后，玩家通过摇动手机来转动骰子，当所有人确定骰子后，从庄家开始叫点。" size="26" horizontalCenter="-4" verticalCenter="-286.5"/>
+	<e:Label textColor="0x000000" fontFamily="黑体" width="506" lineSpacing="10" text="    游戏规则：1.庄家叫点无限制2.后续叫点的玩家，叫骰子的个数不能小于上家。当叫点的个数一样时，点数必须超过上家；当叫的个数大于上家时，点数无限制。3.当玩家不相信上家叫点时，可以选择“开”，让系统判定输赢4.当没有玩家叫过点数“1”时，“1”可作为赖子充当任意点数。骰子后，从庄家开始叫点。" x="101" size="26" verticalCenter="-42.5"/>
+	<e:Label textColor="0x000000" fontFamily="黑体" width="506" lineSpacing="10" x="20" text="    举例：场上无人叫过“1”，玩家甲叫4个“2”，玩家乙不信选择“开”，开出3个“2”、2个“1”，系统判定场上有5个“2”，玩家甲是正确的，所以甲获得了胜利。" size="26" horizontalCenter="1" verticalCenter="180.5"/>
+	<e:UIAsset id="UIA_back" source="dice_btn_4_png" name="btn_close" y="961" horizontalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing"
+        minHeight="60" minWidth="140">
+	<w:HostComponent name="egret.gui.Button" />
+	<e:states>
+		<e:State name="up" />
+		<e:State name="down" />
+		<e:State name="disabled" />
+	</e:states>
+	<e:UIAsset width="100%" height="100%" source="exchange_png"
+	           source.down="exchange_png" source.disabled="exchange_png" />
+</e:Skin>

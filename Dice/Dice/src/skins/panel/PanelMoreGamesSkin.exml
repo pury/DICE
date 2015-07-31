@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset y="208" source="dice_mu5_png" horizontalCenter="0"/>
+	<e:UIAsset y="185" horizontalCenter="0" source="extra_more_games_png"/>
+	<e:UIAsset x="141" name="UIA_beer" source="extra_beer_png" y="629"/>
+	<e:UIAsset source="dice_btn_4_png" name="btn_close" horizontalCenter="0" y="885"/>
+	<e:UIAsset x="141" name="UIA_dice" source="extra_dice_png" y="409"/>
+</e:Skin>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+	</e:states>
+	<e:UIAsset id="UIA_bg" source="loading_bg_png" x="0" y="0" name="UIA_bg"/>
+	<e:UIAsset source="dice_input_1_png" name="UIA_11" x="98" y="576"/>
+	<e:UIAsset name="UIA_22" source="dice_code_1_png" x="98" y="693"/>
+	<e:UIAsset source="dice_input_1_png" name="UIA_33" x="98" y="809"/>
+	<e:UIAsset source="dice_input_1_png" name="UIA_44" x="98" y="925"/>
+	<e:UIAsset id="UIA" source="icon_png" y="6" name="UIA_logo" horizontalCenter="0"/>
+	<e:Group height="96" width="546" x="90" y="1087">
+		<e:Button id="btn_back" label="按钮" x="-30" y="39" skinName="skins.components.ButtonNoSkin" name="btn_back"/>
+		<e:Button id="btn_ok" label="按钮" x="266" y="103" skinName="skins.components.ButtonYesSkin" name="btn_ok"/>
+		<e:layout>
+			<e:HorizontalLayout gap="25"/>
+		</e:layout>
+	</e:Group>
+	<e:TextInput id="ti_name" skinName="skins.components.TextInputloginSkin" textColor="0xCEC1C1" restrict="0-9" fontFamily="黑体" size="22" width="369" x="239" y="581" textAlign="left"/>
+	<e:TextInput id="ti_pass" skinName="skins.components.TextInputloginSkin" textColor="0xCEC1C1" restrict="0-9" fontFamily="黑体" width="131" size="30" y="699" text="1212" x="264" textAlign="left"/>
+	<e:TextInput id="ti_pw" skinName="skins.components.TextInputloginSkin" textColor="0xCEC1C1" restrict="0-9 a-z A-z @" fontFamily="黑体" width="369" x="239" textAlign="left" y="820" displayAsPassword="true"/>
+	<e:TextInput id="ti_pw2" skinName="skins.components.TextInputloginSkin" textColor="0xCEC1C1" restrict="0-9 a-z A-z @" fontFamily="黑体" width="369" x="239" textAlign="left" y="937" displayAsPassword="true"/>
+	<e:UIAsset source="dice_label_2_png" name="UIA_2" x="117" y="710"/>
+	<e:UIAsset source="dice_label_3_png" name="UIA_1" x="117" y="592"/>
+	<e:UIAsset source="dice_label_1_png" name="UIA_3" x="117" y="827"/>
+	<e:UIAsset source="dice_label_1_png" name="UIA_4" x="117" y="947"/>
+	<e:Group height="72" width="205" x="424" y="698">
+		<e:Button id="btn_code" label="按钮" skinName="skins.components.ButtonCodeSkin" name="btn_code" x="-6" y="2"/>
+		<e:Label id="label_second" text="(60)" name="label_second" touchEnabled="false" bold="true" fontFamily="黑体" size="32" textAlign="left" x="125" verticalCenter="2"/>
+	</e:Group>
+	<e:Label textColor="0xC2C2C2" text="请输入手机号" touchEnabled="false" size="42" name="label_name" id="label_name" x="264" y="596" textAlign="left"/>
+	<e:Label id="label_pw" textColor="0xC2C2C2" touchEnabled="false" size="42" name="label_name" x="264" text="请设置密码" y="831" textAlign="left"/>
+	<e:Label id="label_pw2" touchEnabled="false" textColor="0xC2C2C2" size="42" name="label_name" x="264" text="请重复密码" y="950" textAlign="left"/>
+</e:Skin>

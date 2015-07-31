@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" width="720" height.disabled="295" height="778">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:List x="154" y="1" itemRendererSkinName="skins.components.ItemRendererRoomPlayersSkin" x.normal="0" y.normal="0">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object label="数据1"/>
+				<e:Object label="数据2"/>
+				<e:Object label="数据3"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:TileLayout requestedRowCount="3" requestedColumnCount="3" horizontalGap.normal="164" verticalGap.normal="100"/>
+		</e:layout>
+	</e:List>
+</e:Skin>

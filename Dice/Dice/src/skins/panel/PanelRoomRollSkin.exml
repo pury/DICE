@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" width="720" height.disabled="295">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="UIA_roll_bg" source="black_bg_png" y="0" height="385" x="0"/>
+	<e:List id="list_dice" y="27" itemRendererSkinName="skins.components.ItemRendererDiceSkin" horizontalCenter="0">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object label="数据1"/>
+				<e:Object label="数据2"/>
+				<e:Object label="数据3"/>
+				<e:Object label="null"/>
+				<e:Object label="null"/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:List>
+	<e:UIAsset id="UIA_roll_no" source="dice_btn_2_png" x="49" y="271" name="UIA_roll_no"/>
+	<e:UIAsset id="UIA_roll_ok" source="dice_btn_1_png" x="410" y="271" name="UIA_roll_ok"/>
+	<e:Label id="label_reminder" textAlign="center" size="80" horizontalCenter="0" y="173" text="10"/>
+</e:Skin>

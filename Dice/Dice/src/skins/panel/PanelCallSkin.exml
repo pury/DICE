@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="UIA_bg_white_select" source="dice_selcect_bg_white_png" horizontalCenter="0" y="512"/>
+	<e:Group width="162" height="202" left="30" y="549">
+		<e:UIAsset source="bg_select_png" y="0" x="0"/>
+		<e:Scroller id="scro_num1" y="31" x="10" width="148" height="132">
+			<e:Group width="144" height="132">
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+				<e:List id="list_call_num1" y="360" bold="true" itemRendererSkinName="skins.components.ItemRendererNumberSkin" x="277">
+					<e:layout>
+						<e:VerticalLayout gap="0"/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="1"/>
+							<e:Object label="3"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Group width="162" height="202" left="196" y="549">
+		<e:UIAsset y="0" x="0" source="bg_select_png"/>
+		<e:Scroller id="scro_num2" y="31" x="10" width="148" height="132">
+			<e:Group width="144" height="132">
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+				<e:List id="list_call_num2" y="360" bold="true" itemRendererSkinName="skins.components.ItemRendererNumberSkin" x="277">
+					<e:layout>
+						<e:VerticalLayout gap="0"/>
+					</e:layout>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="1"/>
+							<e:Object label="3"/>
+						</e:Array>
+					</e:ArrayCollection>
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Group width="162" height="202" right="11" y="549">
+		<e:UIAsset source="bg_select_png" id="UIA_dice0" y="0" name="UIA_dice" x="0"/>
+		<e:Scroller id="scro_dice" y="29" x="6" width="153" height="150">
+			<e:Group width="150">
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+				<e:List id="list_call_selectdice" y="-29" itemRendererSkinName="skins.components.ItemRendererSelectDiceSkin" x="-5">
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="1"/>
+						</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+						<e:VerticalLayout gap="0"/>
+					</e:layout>
+				</e:List>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:UIAsset id="UIA_ge" source="word_png" horizontalCenter="98.5" y="598"/>
+	<e:Button id="btn_call_call" skinName="skins.components.ButtonCallSkin" label="按钮" name="btn_call_call" enabled="true" horizontalCenter="162" y="886"/>
+	<e:Button id="btn_call_open" label="按钮" name="btn_call_open" enabled="true" skinName="skins.components.ButtonOpenSkin" horizontalCenter="-162" y="886"/>
+	<e:UIAsset source="dice_table_19_png" x="186" y="811"/>
+	<e:UIAsset id="UIA_pro" x="186" source="dice_table_20_png" y="811"/>
+	<e:Label id="label_pro" x="512" text="20" textAlign="center" y="799"/>
+	<e:UIAsset id="UIA_last" source="dice_table_24_png" name="UIA_last" x="0" y="238"/>
+	<e:Group id="group_last" height="254" width="720" horizontalCenter="1" y="238">
+		
+		<e:UIAsset source="dice_table_21_png" x="78" y="-1"/>
+		<e:UIAsset x="525" y="14" source="mutiple_sign_png"/>
+		<e:UIAsset id="UIA_number_right" x="443" y="6" source="num0_png"/>
+		<e:UIAsset id="UIA_number_left" x="388" y="6" source="num3_png"/>
+		<e:UIAsset id="UIA_last_point" width="82" height="86" source="dice1_png" x="596" y="1"/>
+	</e:Group>
+	<e:UIAsset id="UIA_call_reminder" y="376" source="dice_call_open_png" horizontalCenter="0"/>
+</e:Skin>

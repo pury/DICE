@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:UIAsset id="UIA_loading" source="loading_bg_png" x="0" y="0"/>
+	<e:UIAsset id="UIA_bg" source="black_bg_png" x="0" y="0" height="1280"/>
+	<e:Group id="group_center" height="922" width="648" y="224" horizontalCenter="0">
+		<e:UIAsset source="dice_mu5_png" y="6" horizontalCenter="0"/>
+		<e:UIAsset source="dice_mu7_png" x="190" y="-24"/>
+		<e:UIAsset id="UIA_enter" source="dice_btn_1_png" name="UIA_enter" horizontalCenter="0" y="712"/>
+		<e:UIAsset id="UIA_mu1" source="dice_mu1_png" name="UIA_mu1" width="213" height="224" x="94" y="188"/>
+		<e:UIAsset id="UIA_mu2" source="dice_mu2_png" name="UIA_mu2" width="213" height="224" x="344" y="188"/>
+		<e:UIAsset id="UIA_mu3" source="dice_mu3_png" name="UIA_mu3" width="213" height="224" x="94" y="439"/>
+		<e:UIAsset id="UIA_mu4" source="dice_mu4_png" name="UIA_mu4" width="213" height="224" x="344" y="439"/>
+		<e:UIAsset id="UIA_choose" source="dice_mu6_png" name="UIA_choose" enabled="false" x="193" y="276"/>
+		<e:UIAsset source="dice_mu8_png" y="81" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

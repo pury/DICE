@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="720" height="1280" currentState="setting" xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<w:HostComponent name="egret.gui.SkinnableComponent"/>
+	<w:Declarations/>
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="quit"/>
+		<e:State name="setting"/>
+	</e:states>
+	<e:UIAsset id="UIA_bg" source="bg_png" y="-4" y.quit="0" y.normal="0" y.setting="0"/>
+	<e:UIAsset includeIn="quit" y="215" horizontalCenter="0" source="dice_set_1_png"/>
+	<e:Group height="108" width="523" includeIn="quit" y="755" horizontalCenter="0">
+		<e:UIAsset id="btn_back_game" source="dice_btn_4_png" includeIn="quit" x="43" y="15" name="btn_back_game"/>
+		<e:UIAsset id="btn_quit" includeIn="quit" x="277" y="23" name="btn_quit" source="dice_btn_1_png"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="btn_back_room" label="按钮" includeIn="setting" skinName="skins.components.ButtonBackSkin" name="btn_back_room" x="24" y="28"/>
+	<e:UIAsset id="UIA_sound" includeIn="setting" name="UIA_sound" width="78" source="dice_set_2_png" x="614" y="28"/>
+	<e:Group id="group_set" height="612" width="386" includeIn="setting" y="336" horizontalCenter="0">
+		<e:Button id="btn_info" label="按钮" x="314" y="134" skinName="skins.components.ButtonInfoSkin" name="btn_info" visible="true"/>
+		<e:Button id="btn_help" label="按钮" x="174" y="260" skinName="skins.components.ButtonHelpSkin" name="btn_help"/>
+		<e:Button id="btn_sing_exchange" label="按钮" x="242" y="327" skinName="skins.components.ButtonExchangeSingSkin" name="btn_sing_exchange"/>
+		<e:Button id="btn_exchange" label="按钮" x="120" y="263" skinName="skins.components.ButtonExchangeSkin" name="btn_exchange"/>
+		<e:Button id="btn_direct_buy" label="按钮" x="166" y="295" skinName="skins.components.ButtonDirectBuySkin" name="btn_direct_buy"/>
+						<e:layout>
+			<e:VerticalLayout gap="40"/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="btn_back_setting" label="按钮" includeIn="normal" skinName="skins.components.ButtonBackSkin" name="btn_back_setting" left="24" top="29" width="64"/>
+	<e:Group height="418" width="386" includeIn="normal" x="168" y="321">
+		<e:Button id="btn_charge" label="按钮" x="4" y="94" skinName="skins.components.ButtonChargeSkin" name="btn_charge" visible="false"/>
+		<e:Button id="btn_switch" label="按钮" x="198" y="344" skinName="skins.components.ButtonSwitchSkin" name="btn_switch"/>
+		<e:Button id="btn_moregames" label="按钮" x="262" y="268" skinName="skins.components.ButtonMoreGamesSkin" name="btn_moregames"/>
+		<e:layout>
+			<e:VerticalLayout gap="70"/>
+		</e:layout>
+	</e:Group>
+	
+</e:Skin>

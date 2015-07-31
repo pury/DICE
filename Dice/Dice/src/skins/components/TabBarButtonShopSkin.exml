@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing"
+        height="60" minWidth="140">
+	<w:HostComponent name="egret.gui.TabBarButton" />
+	<e:states>
+		<e:State name="up" />
+		<e:State name="down" />
+		<e:State name="disabled" />
+		<e:State name="upAndSelected"/>
+		<e:State name="downAndSelected"/>
+		<e:State name="disabledAndSelected"/>
+	</e:states>
+	<e:UIAsset width="100%" height="100%" source="dice_shop_2_png" source.downAndSelected="dice_shop_1_png"
+	           source.upAndSelected="dice_shop_1_png" source.disabledAndSelected="dice_shop_1_png"
+	           source.down="dice_shop_1_png" source.disabled="dice_shop_1_png" />
+	<e:UIAsset id="UIA_id" horizontalCenter="0" verticalCenter="0" source="dice_shop_9_png"/>
+</e:Skin>

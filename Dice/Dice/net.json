@@ -1,0 +1,11 @@
+{
+    "name": "net",
+    "dependence": ["core"],
+    "source":"src/NetWork/net/",
+    "file_list": [
+        "net.js",
+		"crypto.js",
+		"action.js",
+        "net.d.ts"
+    ]
+}

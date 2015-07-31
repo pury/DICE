@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing" 
+        width="262"
+        height="31">
+	<w:HostComponent name="egret.gui.ItemRenderer"/>
+	<e:states>
+		<e:State name="up"/>
+		<e:State name="down"/>
+		<e:State name="disabled"/>
+	</e:states>
+	<e:Label id="label_name" width="262" x="0" height="31" y="0" textAlign="left" text="最多五个字叫了19个6点" size="22" verticalAlign="middle" textColor="0x020000"/>
+</e:Skin>
